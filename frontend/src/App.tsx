@@ -13,6 +13,8 @@ import LearnMore from './pages/LearnMore';
 import Navbar from './components/Navbar';
 import BottomNav from './components/BottomNav';
 import ScrollToTop from './components/ScrollToTop';
+import Chatbot from './components/Chatbot';
+
 
 function AppContent() {
   const [session, setSession] = useState<any>(null);
@@ -70,6 +72,7 @@ function AppContent() {
       </AnimatePresence>
 
       <BottomNav session={session} />
+      <Chatbot />
     </div>
   );
 }
